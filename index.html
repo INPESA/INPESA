@@ -31,14 +31,13 @@
         content="https://instrumentosdepesaje.com/____impro/1/onewebmedia/LOGO%20inpesa-02.png?etag=%22888c-6537f50b%22&amp;sourceContentType=image%2Fpng&amp;quality=85">
     <link rel="shortcut icon" sizes="16x16"
         href="/____impro/1/onewebmedia/LOGO%20inpesa-02.png?etag=%22888c-6537f50b%22&amp;sourceContentType=image%2Fpng&amp;resize=16,16&amp;ignoreAspectRatio">
-
-    <link rel="icon" type="image/png" sizes="32x32"
+    <link rel="icon" sizes="32x32"
         href="/____impro/1/onewebmedia/LOGO%20inpesa-02.png?etag=%22888c-6537f50b%22&amp;sourceContentType=image%2Fpng&amp;resize=32,32&amp;ignoreAspectRatio">
     <link rel="apple-touch-icon"
         href="/____impro/1/onewebmedia/LOGO%20inpesa-02.png?etag=%22888c-6537f50b%22&amp;sourceContentType=image%2Fpng&amp;resize=57,57&amp;ignoreAspectRatio">
     <link rel="apple-touch-icon" sizes="60x60"
         href="/____impro/1/onewebmedia/LOGO%20inpesa-02.png?etag=%22888c-6537f50b%22&amp;sourceContentType=image%2Fpng&amp;resize=60,60&amp;ignoreAspectRatio">
-    <link rel="icon" type="image/png" sizes="64x64"
+    <link rel="icon" sizes="64x64"
         href="/____impro/1/onewebmedia/LOGO%20inpesa-02.png?etag=%22888c-6537f50b%22&amp;sourceContentType=image%2Fpng&amp;resize=64,64&amp;ignoreAspectRatio">
     <link rel="apple-touch-icon" sizes="72x72"
         href="/____impro/1/onewebmedia/LOGO%20inpesa-02.png?etag=%22888c-6537f50b%22&amp;sourceContentType=image%2Fpng&amp;resize=72,72&amp;ignoreAspectRatio">
@@ -59,25 +58,442 @@
     <link rel="apple-touch-icon" sizes="180x180"
         href="/____impro/1/onewebmedia/LOGO%20inpesa-02.png?etag=%22888c-6537f50b%22&amp;sourceContentType=image%2Fpng&amp;resize=180,180&amp;ignoreAspectRatio">
     <link rel="canonical" href="https://instrumentosdepesaje.com/">
-
-    <link rel="canonical" href="https://instrumentosdepesaje.com/">
     <style type="text/css">
-        /* Agregar estilos según sea necesario */
+        html {
+            word-wrap: break-word;
+        }
+
+        *,
+        ::before,
+        ::after {
+            word-wrap: inherit;
+        }
+
+        html {
+            box-sizing: border-box;
+        }
+
+        *,
+        ::before,
+        ::after {
+            box-sizing: inherit;
+        }
+
+        div.code {
+            box-sizing: content-box;
+        }
+
+        body,
+        ul,
+        ol,
+        li,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        form,
+        input,
+        p,
+        td,
+        textarea {
+            margin: 0;
+            padding: 0;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-size: 100%;
+            font-weight: normal;
+        }
+
+        ol,
+        ul {
+            list-style: none;
+        }
+
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+
+        img {
+            border: 0;
+        }
+
+        body {
+            -moz-osx-font-smoothing: grayscale;
+            -webkit-font-smoothing: antialiased;
+        }
     </style>
+    <style type="text/css">
+        @font-face {
+            font-family: 'dropDownMenu';
+            src:
+                url('data:font/woff;base64,d09GRgABAAAAAATIAAsAAAAABHwAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAABPUy8yAAABCAAAAGAAAABgCKf/                                                                           KmNtYXAAAAFoAAAAVAAAAFQXVtKIZ2FzcAAAAbwAAAAIAAAACAAAABBnbHlmAAABxAAAAHwAAAB8fskqDWhlYWQAAAJAAAAANgAAADYTD4ZFaGhlYQAAAngAAAAkAAAAJAMbAaFobXR4AAACnAAAABgAAAAYBgABN2xvY2EAAAK0AAAADgAAAA4AZgBCbWF4cAAAAsQAAAAgAAAAIAAIAAhuYW1lAAAC5AAAAcIAAAHCcs7DVXBvc3QAAASoAAAAIAAAACAAAwAAAAMCAAGQAAUAAAFMAWYAAABHAUwBZgAAAPUAGQCEAAAAAAAAAAAAAAAAAAAAARAAAAAAAAAAAAAAAAAAAAAAQAAA6QEBmf+                 aAGYBmQBmAAAAAQAAAAAAAAAAAAAAIAAAAAAAAwAAAAMAAAAcAAEAAwAAABwAAwABAAAAHAAEADgAAAAKAAgAAgACAAEAIOkB//3//wAAAAAAIOkA//3//wAB/+MXBAADAAEAAAAAAAAAAAAAAAEAAf//                                     AA8AAQAAAAAAAAAAAAIAADc5AQAAAAABAAAAAAAAAAAAAgAANzkBAAAAAAEAAAAAAAAAAAACAAA3OQEAAAAAAQCAAFABgADuAAUAADcXNxcHJ55iYh6AgO5iYh6AgAABALcAGgFVARoABQAAPwEnNxcHt2JiHoCAOGJiHoCAAAEAAAABAADh0Y3XXw889QALAgAAAAAA2TijFwAAAADZOKMXAAAAAAGAARoAAAAIAAIAAAAAAAAAAQAAAZn/                                                                                                                                mgAAAgAAAAAAAYAAAQAAAAAAAAAAAAAAAAAAAAYCAAAAAAAAAAAAAAAAAAAAAgAAgAIAALcAAAAAAAoAFAAeAC4APgAAAAEAAAAGAAYAAQAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAOAK4AAQAAAAAAAQAMAAAAAQAAAAAAAgAHAI0AAQAAAAAAAwAMAEUAAQAAAAAABAAMAKIAAQAAAAAABQALACQAAQAAAAAABgAMAGkAAQAAAAAACgAaAMYAAwABBAkAAQAYAAwAAwABBAkAAgAOAJQAAwABBAkAAwAYAFEAAwABBAkABAAYAK4AAwABBAkABQAWAC8AAwABBAkABgAYAHUAAwABBAkACgA0AOBkcm9wRG93bk1lbnUAZAByAG8AcABEAG8AdwBuAE0AZQBuAHVWZXJzaW9uIDEuMABWAGUAcgBzAGkAbwBuACAAMQAuADBkcm9wRG93bk1lbnUAZAByAG8AcABEAG8AdwBuAE0AZQBuAHVkcm9wRG93bk1lbnUAZAByAG8AcABEAG8AdwBuAE0AZQBuAHVSZWd1bGFyAFIAZQBnAHUAbABhAHJkcm9wRG93bk1lbnUAZAByAG8AcABEAG8AdwBuAE0AZQBuAHVGb250IGdlbmVyYXRlZCBieSBJY29Nb29uLgBGAG8AbgB0ACAAZwBlAG4AZQByAGEAdABlAGQAIABiAHkAIABJAGMAbwBNAG8AbwBuAC4AAAADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+    </style>
+    <link rel="stylesheet" href="onewebstatic/445dfaf792.css">
+    <style type="text/css">
+        @media (max-width: 650px) {
+            body {
+                min-width: 'initial'
+            }
+
+            body.desktopV {
+                min-width: 940px
+            }
+        }
+
+        @media (min-width: 651px) {
+            body {
+                min-width: 940px
+            }
+
+            body.mobileV {
+                min-width: initial
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="/onewebstatic/b4da795d81.css">
+    <link
+        href="/onewebstatic/google-fonts.php?url=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArimo%253A100%252C100italic%252C200%252C200italic%252C300%252C300italic%252C500%252C500italic%252C600%252C600italic%252C700%252C700italic%252C800%252C800italic%252C900%252C900italic%252Citalic%252Cregular&amp;subset%3Dall"
+        rel="stylesheet">
+    <link
+        href="/onewebstatic/google-fonts.php?url=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DTeko%253A100%252C100italic%252C200%252C200italic%252C300%252C300italic%252C500%252C500italic%252C600%252C600italic%252C700%252C700italic%252C800%252C800italic%252C900%252C900italic%252Citalic%252Cregular&amp;subset%3Dall"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/onewebstatic/063c917325.css">
+    <style type="text/css">
+        .bodyBackground {
+
+            background-image: none;
+            background-color: rgba(255, 255, 255, 1);
+        }
+    </style>
+    <script src="/onewebstatic/e47f208c3a.js"></script>
+    <script src="/onewebstatic/c9c33b6ec8.js"></script>
 </head>
 
 <body class="Preview_body__2wDzb bodyBackground" style="overflow-y:scroll;overflow-x:hidden" data-attachments="{}">
     <div></div>
     <div>
-        <!-- Contenido de la página -->
+        <div data-mobile-pin="0" id="wsb-mobile-header" class="mm mm-mobile-preview">
+            <header id="MobileHeader_container" class="MobileHeader_container__1XW3y MobileHeader_withLogo__boWI9"
+                style="background-color:rgba(255,255,255,1)">
+                <div class="MobileHeader_logo__VBlNX"><a class="MobileHeader_logoAnchor__3VO33" href="/"><img
+                            class="MobileHeader_logoImage__BZwGs"
+                            src="/____impro/1/onewebmedia/LOGO%20inpesa-02.png?withoutEnlargement&amp;resize=58,29"
+                            srcset="/____impro/1/onewebmedia/LOGO%20inpesa-02.png?withoutEnlargement&amp;resize=58,29 1x, /____impro/1/onewebmedia/LOGO%20inpesa-02.png?withoutEnlargement&amp;resize=116,58 2x"
+                            alt="Ingenieria de Pesaje S.A."></a></div>
+            </header>
+        </div>
     </div>
     <style type="text/css">
-        /* Agregar estilos según sea necesario */
+        .template {
+            visibility: hidden
+        }
+
+        body {
+            overflow-x: hidden
+        }
     </style>
-    <link rel="stylesheet" href="onewebstatic/445dfaf792.css">
-    <!-- Otros enlaces de hojas de estilo -->
-    <script src="/onewebstatic/e47f208c3a.js"></script>
-    <script src="/onewebstatic/c9c33b6ec8.js"></script>
+    <link rel="stylesheet" href="onewebstatic/96e080e34d.css">
+    <div class="template" data-mobile-view="true">
+        <div class="Preview_row__3Fkye row" style="width:940px"></div>
+        <div class="Preview_row__3Fkye row Preview_noSideMargin__2I-_n" style="min-height:431px;width:100%">
+            <div data-id="8FE658D5-5128-41F8-9B35-0BF91763B784" data-kind="SECTION"
+                style="width:100%;min-height:431px;left:auto;margin-top:0;margin-left:0"
+                class="Preview_componentWrapper__2i4QI">
+                <div id="Header" data-in-template="true" data-id="8FE658D5-5128-41F8-9B35-0BF91763B784"
+                    data-kind="Block" data-specific-kind="SECTION" data-pin="0" data-stretch="true"
+                    class=" Preview_block__16Zmu ">
+                    <div class="StripPreview_backgroundComponent__3YmQM Background_backgroundComponent__3_1Ea hasChildren"
+                        style="background-color:rgba(255,255,255,1);min-height:431px;padding-bottom:0" data-width="100"
+                        data-height="431">
+                        <div class="Preview_column__1KeVx col " style="min-height:100%;width:940px;margin:0 auto">
+                            <div class="Preview_row__3Fkye row" style="min-height:349px;width:940px">
+                                <div data-id="F40215EE-0909-4597-A7B7-F1DE8274D605" data-kind="LOGO"
+                                    style="width:213px;min-height:98px;margin-top:251px;margin-left:0"
+                                    class="Preview_componentWrapper__2i4QI">
+                                    <div data-in-template="true" data-id="F40215EE-0909-4597-A7B7-F1DE8274D605"
+                                        data-kind="Component" data-specific-kind="LOGO"
+                                        class=" Preview_component__SbiKo ">
+                                        <div class="Mobile_imageComponent__QXWk1"
+                                            style="width:213px;height:98px;overflow:hidden" data-width="213"
+                                            data-height="98"><a href="/" target="_self" title="" alt=""
+                                                style="display:block;margin-left:0px;width:196.521276595745px"
+                                                data-stop-propagation="true"><img loading="lazy" role="presentation"
+                                                    data-scalestrategy="logo" style="margin-top:0px;display:block"
+                                                    src="/____impro/1/onewebmedia/LOGO%20inpesa-02.png?etag=%22888c-6537f50b%22&amp;sourceContentType=image%2Fpng&amp;ignoreAspectRatio&amp;resize=377%2B188"
+                                                    srcset="/____impro/1/onewebmedia/LOGO%20inpesa-02.png?etag=%22888c-6537f50b%22&amp;sourceContentType=image%2Fpng&amp;ignoreAspectRatio&amp;resize=377%2B188 2x, /____impro/1/onewebmedia/LOGO%20inpesa-02.png?etag=%22888c-6537f50b%22&amp;sourceContentType=image%2Fpng&amp;ignoreAspectRatio&amp;resize=377%2B188 3x"
+                                                    height="98" width="196.521276595745" alt="Ingenieria de Pesaje S.A."
+                                                    data-width="213" data-height="98"></a></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="Preview_row__3Fkye row" style="min-height:82px;width:940px">
+                                <div data-id="2F91636E-DA07-4B37-AB96-E493F571EC5E" data-kind="MENU"
+                                    style="width:692px;min-height:82px;margin-top:0;margin-left:0"
+                                    class="Preview_componentWrapper__2i4QI">
+                                    <div data-in-template="true" data-id="2F91636E-DA07-4B37-AB96-E493F571EC5E"
+                                        data-kind="Component" data-specific-kind="MENU"
+                                        class="Preview_mobileHide__9T929 Preview_component__SbiKo ">
+                                        <div class="menu menuself menuhorizontal menuhorizontalcenter menuverticalmiddle White"
+                                            style="width:692px;height:82px">
+                                            <ul class="ThemeMenu1">
+                                                <li><a class="selected level-0" href="/"><span>Inicio</span></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="clear:both"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="Preview_row__3Fkye row Preview_noSideMargin__2I-_n" style="min-height:400px;width:100%">
+            <div data-id="0A2A9174-F906-4EC0-9C74-127540BB8A57" data-kind="SECTION"
+                style="width:100%;min-height:400px;left:auto;margin-top:0;margin-left:0"
+                class="Preview_componentWrapper__2i4QI">
+                <div id="Section1" data-in-template="false" data-id="0A2A9174-F906-4EC0-9C74-127540BB8A57"
+                    data-kind="Block" data-specific-kind="SECTION" data-pin="0" data-stretch="true"
+                    class=" Preview_block__16Zmu ">
+                    <div class="StripPreview_backgroundComponent__3YmQM Background_backgroundComponent__3_1Ea"
+                        style="background-color:transparent;min-height:400px;padding-bottom:0" data-width="100"
+                        data-height="400"></div>
+                </div>
+            </div>
+        </div>
+        <div class="Preview_row__3Fkye row Preview_noSideMargin__2I-_n" style="min-height:279px;width:100%">
+            <div data-id="43211E81-3B69-4FC3-8D3E-5B85AFA336D2" data-kind="SECTION"
+                style="width:100%;min-height:279px;left:auto;margin-top:0;margin-left:0"
+                class="Preview_componentWrapper__2i4QI">
+                <div id="Footer" data-in-template="true" data-id="43211E81-3B69-4FC3-8D3E-5B85AFA336D2"
+                    data-kind="Block" data-specific-kind="SECTION" data-pin="0" data-stretch="true"
+                    class=" Preview_block__16Zmu ">
+                    <div class="StripPreview_backgroundComponent__3YmQM Background_backgroundComponent__3_1Ea hasChildren"
+                        style="background-color:rgba(60,60,60,1);min-height:279px;padding-bottom:60px" data-width="100"
+                        data-height="279">
+                        <div class="Preview_column__1KeVx col " style="min-height:100%;width:940px;margin:0 auto">
+                            <div class="Preview_row__3Fkye row" style="min-height:90px;width:940px">
+                                <div data-id="F26B70F8-B06D-48A3-942D-7A75DD8DB9F3" data-kind="PHONE"
+                                    style="width:320px;min-height:40px;margin-top:50px;margin-left:0"
+                                    class="Preview_componentWrapper__2i4QI">
+                                    <div data-in-template="true" data-id="F26B70F8-B06D-48A3-942D-7A75DD8DB9F3"
+                                        data-kind="Component" data-specific-kind="PHONE"
+                                        class=" Preview_component__SbiKo ">
+                                        <div class="Black themeTextClass" style="height:100%;width:100%">
+                                            <div class="textnormal"
+                                                style="word-break:break-word;height:100%;width:100%;display:flex;align-items:center;flex-direction:row">
+                                                <div style="width:auto">
+                                                    <div class="svgContainer"
+                                                        style="color:rgba(255,255,255,1);font-size:24px;display:flex;justify-content:center;width:24px;height:24px;margin-right:12px">
+                                                        <a class="textnormal" href="tel:+505%205716-8180"
+                                                            style="font-size:1px;color:rgba(255,255,255,1);letter-spacing:0;line-height:1.2;width:24px"
+                                                            data-preserve-whitespace="true"><svg viewBox="0 0 29 29"
+                                                                style="width:24px">
+                                                                <path fill="none" stroke="currentColor"
+                                                                    stroke-linecap="round" stroke-linejoin="round"
+                                                                    stroke-width="1.7"
+                                                                    d="M6.364 3.81c1.496-1.503 5.032-2.139 6.907-2.108 1.88-.218 1.273 8.104.313 8.263 0 0-3.039.384-3.125 1.275-.116 1.217 3.009 8.67 4.22 8.84.65.091 2.606-1.402 2.606-1.402 1.521-1.145 4.678 2.2 6.161 3.596.649.627.617 1.159-.059 1.947-1.181 1.322-4.29 3.439-5.52 3.266-2.988-.42-8.05-4.592-10.483-9.582-2.743-5.629-2.712-12.82-1.02-14.095z">
+                                                                </path>
+                                                            </svg></a></div>
+                                                </div>
+                                                <div style="width:100%">
+                                                    <div class="textnormal"
+                                                        style="white-space:pre-wrap;line-height:1.2;text-align:left;width:100%">
+                                                        <a class="textnormal" href="tel:+505%205716-8180"
+                                                            style="color:rgba(255,255,255,1);letter-spacing:0;line-height:1.2"
+                                                            data-preserve-whitespace="true"><span>+505&nbsp;5716-8180</span></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="Preview_row__3Fkye row" style="min-height:54px;width:940px">
+                                <div data-id="E744137E-5E01-473C-A0C8-05C8425DAD73" data-kind="EMAIL"
+                                    style="width:350px;min-height:44px;margin-top:10px;margin-left:0"
+                                    class="Preview_componentWrapper__2i4QI">
+                                    <div data-in-template="true" data-id="E744137E-5E01-473C-A0C8-05C8425DAD73"
+                                        data-kind="Component" data-specific-kind="EMAIL"
+                                        class=" Preview_component__SbiKo ">
+                                        <div class="Black themeTextClass" style="height:100%;width:100%">
+                                            <div class="textnormal"
+                                                style="word-break:break-word;height:100%;width:100%;display:flex;align-items:center;flex-direction:row">
+                                                <div style="width:auto">
+                                                    <div class="svgContainer"
+                                                        style="color:rgba(255,255,255,1);font-size:24px;display:flex;justify-content:center;width:24px;height:24px;margin-right:12px">
+                                                        <a class="textnormal"
+                                                            href="mailto:gerencia@instrumentosdepesaje.com"
+                                                            style="font-size:1px;color:rgba(255,255,255,1);letter-spacing:0;line-height:1.2;width:24px"
+                                                            data-preserve-whitespace="true"><svg viewBox="0 0 29 29"
+                                                                style="width:24px">
+                                                                <path fill="currentColor"
+                                                                    d="M5.135 5.37c-1.531 0-2.772 1.209-2.772 2.7v12.958c0 1.491 1.241 2.7 2.772 2.7h18.848c1.53 0 2.771-1.209 2.771-2.7V8.07c0-1.491-1.24-2.7-2.771-2.7H5.135zm0-1.62h18.848c2.449 0 4.434 1.934 4.434 4.32v12.958c0 2.386-1.985 4.32-4.434 4.32H5.135c-2.45 0-4.435-1.934-4.435-4.32V8.07c0-2.386 1.986-4.32 4.435-4.32z">
+                                                                </path>
+                                                                <path fill="currentColor"
+                                                                    d="M23.998 7.48c.335.306.35.819.036 1.145l-5.898 6.103 5.88 5.728c.298.29.323.745.075 1.062l-.075.083a.847.847 0 01-1.176 0l-5.844-5.693-1.832 1.896a.847.847 0 01-1.21 0l-1.833-1.896L6.277 21.6a.847.847 0 01-1.176 0 .795.795 0 010-1.145l5.88-5.728-5.897-6.103a.795.795 0 01.035-1.145.847.847 0 011.176.035l8.264 8.552 8.264-8.552a.847.847 0 011.175-.035z">
+                                                                </path>
+                                                            </svg></a></div>
+                                                </div>
+                                                <div style="width:100%">
+                                                    <div class="textnormal"
+                                                        style="white-space:pre-wrap;line-height:1.2;text-align:left;width:100%">
+                                                        <a class="textnormal"
+                                                            href="mailto:gerencia@instrumentosdepesaje.com"
+                                                            style="color:rgba(255,255,255,1);letter-spacing:0;line-height:1.2"
+                                                            data-preserve-whitespace="true"><span>gerencia@instrumentosdepesaje.com</span></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="Preview_row__3Fkye row" style="min-height:75px;width:940px">
+                                <div class="Preview_column__1KeVx col  isExpandable"
+                                    style="min-height:75px;width:350px;float:left">
+                                    <div data-id="E619802A-D641-4A07-8A9D-75FAFE16DEE2" data-kind="ADDRESS"
+                                        style="width:350px;min-height:65px;margin-top:10px;margin-left:0"
+                                        class="Preview_componentWrapper__2i4QI">
+                                        <div data-in-template="true" data-id="E619802A-D641-4A07-8A9D-75FAFE16DEE2"
+                                            data-kind="Component" data-specific-kind="ADDRESS"
+                                            class=" Preview_component__SbiKo ">
+                                            <div class="Black themeTextClass" style="height:100%;width:100%">
+                                                <div class="textnormal"
+                                                    style="word-break:break-word;height:100%;width:100%;display:flex;align-items:center;flex-direction:row">
+                                                    <div style="width:auto">
+                                                        <div class="svgContainer"
+                                                            style="color:rgba(255,255,255,1);font-size:24px;display:flex;justify-content:center;width:24px;height:24px;margin-right:12px">
+                                                            <a class="textnormal"
+                                                                href="https://www.google.com/maps/search/?api=1&amp;query=%22INSTRUMENTOS%20DE%20PESAJES%20S.%20A.%2C%20Managua%2C%20Residencial%20Mayales%20Casa%20No%2034%2C%2010000%20Managua%2C%20Managua%2C%20Nicaragua%22"
+                                                                target="_blank"
+                                                                style="font-size:1px;color:rgba(255,255,255,1);letter-spacing:0;line-height:1.2;width:24px"
+                                                                data-preserve-whitespace="true"><svg viewBox="0 0 29 29"
+                                                                    style="width:24px">
+                                                                    <g fill="none" fill-rule="evenodd"
+                                                                        stroke="currentColor" stroke-linecap="round"
+                                                                        stroke-linejoin="round" stroke-width="1.7">
+                                                                        <path
+                                                                            d="M18.625 10.2a4 4 0 11-8 .001 4 4 0 018-.001z">
+                                                                        </path>
+                                                                        <path
+                                                                            d="M23.825 10.2c0-5.985-4.92-9-9.5-8.95C9.797 1.2 5.3 4.223 5.3 10.2c0 5.979 8.188 16.677 8.426 17.116.238.438.976.438 1.214 0 5.923-7.41 8.885-13.116 8.885-17.116z">
+                                                                        </path>
+                                                                    </g>
+                                                                </svg></a></div>
+                                                    </div>
+                                                    <div style="width:100%">
+                                                        <div class="textnormal"
+                                                            style="white-space:pre-wrap;line-height:1.2;text-align:left;width:100%">
+                                                            <a class="textnormal"
+                                                                href="https://www.google.com/maps/search/?api=1&amp;query=%22INSTRUMENTOS%20DE%20PESAJES%20S.%20A.%2C%20Managua%2C%20Residencial%20Mayales%20Casa%20No%2034%2C%2010000%20Managua%2C%20Managua%2C%20Nicaragua%22"
+                                                                target="_blank"
+                                                                style="color:rgba(255,255,255,1);letter-spacing:0;line-height:1.2"
+                                                                data-preserve-whitespace="true"><span>INSTRUMENTOS DE
+                                                                    PESAJES S. A., Managua, Residencial Mayales Casa No
+                                                                    34, 10000 Managua, Managua</span></a></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div style="clear:both"></div>
+                                </div>
+                                <div class="Preview_column__1KeVx col " style="min-height:75px;width:590px;float:left">
+                                    <div data-id="A6C34DD6-3BD7-441D-A52F-C1B74990D281" data-kind="TEXT"
+                                        style="width:360px;min-height:32px;margin-top:43px;margin-left:230px"
+                                        class="Preview_componentWrapper__2i4QI">
+                                        <div data-in-template="true" data-id="A6C34DD6-3BD7-441D-A52F-C1B74990D281"
+                                            data-kind="Component" data-specific-kind="TEXT"
+                                            class=" Preview_component__SbiKo text-align-null">
+                                            <div class="styles_verticalAlignmentWrapper__3SDi2"
+                                                style="align-items:center">
+                                                <div data-mve-font-change="0" style="width:100%"
+                                                    class="styles_contentContainer__lrPIa textnormal styles_text__3jGMu styles_invalidateHighlightAndShadows__2W3IH Black themeTextClass">
+                                                    <p style="line-height: 1.4; font-size: 16px !important; text-align: left;"
+                                                        class=""><span class="textnormal "
+                                                            style="color: rgba(54,54,54,1); font-size: 16px !important;"><span
+                                                                style="color: #3c3c3c;">Copyright © Todos los derechos
+                                                                reservados</span></span></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div style="clear:both"></div>
+                                </div>
+                                <div style="clear:both"></div>
+                            </div>
+                            <div style="clear:both"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="publishOnlyComponents">
+        <div></div>
+    </div>
+    <script src="/onewebstatic/a2cf72ae9c.js"></script>
+    <script src="/onewebstatic/d8aaffab41.js"></script>
+    <script src="/onewebstatic/6499ecfb0a.js"></script>
+    <script src="/onewebstatic/a966beca17.js"></script>
+    <script src="/onewebstatic/fd56fe6e84.js"></script>
+    <script src="/onewebstatic/b2f02b21b9.js"></script>
+    <script src="/onewebstatic/233654b4a9.js"></script>
+    <script src="/onewebstatic/c40b7e9756.js"></script>
+    <script>window._mobileEditorData = { "data": { "8FE658D5-5128-41F8-9B35-0BF91763B784": ["F40215EE-0909-4597-A7B7-F1DE8274D605"], "43211E81-3B69-4FC3-8D3E-5B85AFA336D2": ["F26B70F8-B06D-48A3-942D-7A75DD8DB9F3", "E744137E-5E01-473C-A0C8-05C8425DAD73", "E619802A-D641-4A07-8A9D-75FAFE16DEE2", "A6C34DD6-3BD7-441D-A52F-C1B74990D281"], "0273D022-7116-4E84-A236-4413BB1354FF": ["0A2A9174-F906-4EC0-9C74-127540BB8A57", "43211E81-3B69-4FC3-8D3E-5B85AFA336D2"] }, "wrappedCmpsMap": { "A6C34DD6-3BD7-441D-A52F-C1B74990D281": [] }, "root": "0273D022-7116-4E84-A236-4413BB1354FF", "styles": { "0A2A9174-F906-4EC0-9C74-127540BB8A57": { "visibility": "hidden", "height": 0 }, "E744137E-5E01-473C-A0C8-05C8425DAD73": { "marginTop": 20 }, "E619802A-D641-4A07-8A9D-75FAFE16DEE2": { "marginTop": 20 }, "A6C34DD6-3BD7-441D-A52F-C1B74990D281": { "marginTop": 20, "marginBottom": 35 }, "F26B70F8-B06D-48A3-942D-7A75DD8DB9F3": { "marginTop": 18 } }, "groups": {}, "settings": {} }</script>
+    <script src="/onewebstatic/bb464b55b8.js"></script>
+    <script src="/onewebstatic/50a91946f6.js"></script>
+    <script src="/onewebstatic/c11b17c5d2.js"></script>
+    <script src="/onewebstatic/5fc225786e.js"></script>
+    <script src="/onewebstatic/9fd7509069.js"></script>
+    <script src="/onewebstatic/07a7f46a0f.js"></script>
+    <script src="/onewebstatic/ac03fb8dec.js" id="mobileBackgroundLiner"
+        data-params="{&quot;bodyBackgroundClassName&quot;:&quot;bodyBackground&quot;,&quot;linerClassName&quot;:&quot;Preview_bodyBackgroundLiner__1bYbS&quot;,&quot;scrollEffect&quot;:null}"></script>
+    <div id="tracking-scripts-container">
+        <script key="g-tag-load-lib-script">
+
+        </script>
+        <script key="f-pixel-script">
+
+        </script>
+        <script key="sitWit-script">
+
+        </script>
+        <script key="kliken-script">
+
+            var _swaMa = ["521633404"];
+            "undefined" == typeof swonestats && (function (e, a, t) {
+                function s() {
+                    for (; i[0] && "loaded" == i[0][f];)
+                        (c = i.shift())[o] = !d.parentNode.insertBefore(c, d);
+                }
+                for (var n, r, c, i = [], d = e.scripts[0], o = "onreadystatechange", f = "readyState"; (n = t.shift());)
+                    (r = e.createElement(a)),
+                        "async" in d
+                            ? ((r.async = !1), e.head.appendChild(r))
+                            : d[f]
+                                ? (i.push(r), (r[o] = s))
+                                : e.write("<" + a + ' src="' + n + '" defer></' + a + ">"),
+                        (r.src = n);
+            })(document, "script", ["//analytics.sitewit.com/swonestats/" + _swaMa[0] + "/noconnect/sw.js"]);
+
+        </script>
+
+    </div>
+    <div></div>
 </body>
 
 </html>
